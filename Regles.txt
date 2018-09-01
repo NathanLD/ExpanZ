@@ -1,0 +1,28 @@
+ ------
+|ExpanZ|
+ ------
+
+ Expanz se joue à 2 joueurs. Chacun possède une couleur de pions (Blanc pour le J1, Noir pour le J2).
+ L'objectif est de s'étendre afin de posséder un maximum de pions de votre couleur à la fin de la partie.
+ Remarque : Le nombre de lignes et de colonnes peuvent être changées dans les Constantes.
+ 
+ 
+ 1) Initialisation
+ 
+ Chaque joueur choisit chacun son tour la case sur laquelle il souhaite commencer son expansion. Ce choix est crucial pour remporter la victoire !
+ Les cases choisies par le J1 et le J2 doivent être différentes. La couleur de la case choisie n'attribue pas encore de couleur aux joueurs.
+ 
+ 
+ 2) Continuer à jouer
+ 
+ Chacun son tour, chaque joueur choisit une case adjacente à leur Bloc. Le Bloc représente les cases qu'il contrôle déjà.
+ Le joueur va alors contrôler cette case. De plus, toutes les cases neutres de cette couleur adjacentes au Bloc vont aussi être converties.
+ 
+ Il y a une contrainte : il est impossible de choisir une case de la couleur que votre adversaire contrôle actuellement (la dernière couleur qu'il a choisi).
+ Si un joueur est bloqué ou ne souhaite pas jouer, il peut passer son tour.
+ 
+ 
+ 3) Fin de partie
+ 
+ La partie se termine lorsque toutes les cases sont prises. S'il est impossible de récupérer les dernières cases (couleur de l'adversaire), vous pouvez mettre fin manuellement à la partie.
+ Le joueur qui contrôle le plus de cases est alors déclaré vainqueur.
